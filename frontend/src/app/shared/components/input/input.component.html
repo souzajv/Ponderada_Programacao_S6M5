@@ -1,0 +1,23 @@
+<div class="flex flex-col gap-2">
+    <label 
+    class="pl-3 leading-none red-custom font-black" 
+    id="label" 
+    for="text-input">
+        {{ label }}
+    </label>
+    <input 
+        class="bg-pink
+            rounded-xl
+            border-2
+            border-pink
+            focus:border-red
+            outline-none
+            transition-all
+            duration-200
+            px-3"
+        id="text-input"
+        (input)="onInputChanges($event)"
+        [attr.type]="type"
+        [ngStyle]="{ 'width': width, 'height': height }"
+    />
+</div>

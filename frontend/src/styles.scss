@@ -1,0 +1,30 @@
+@use "tailwindcss";
+
+@theme {
+  --color-red: #AF2929;
+  --color-blue: #A9D0D5;
+  --color-pink: #FBEBE6;
+  --color-white: #FFF6F0;
+  --color-beige: #F5E1BC;
+  --color-black: #2D2A23;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-red);
+  border-radius: 8px;
+} 
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-pink);
+  border-radius: 8px;
+}
+
+body {
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6) 5%, rgba(255, 255, 255, 0) 40%),
+      radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 50%),
+      linear-gradient(135deg, #FBEBE6 0%, #F4D7C8 50%, #EAD1C3 100%);
+}
